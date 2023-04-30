@@ -1,0 +1,19 @@
+.wrapper {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 400px;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.wrapper_open {
+    bottom: -400px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}

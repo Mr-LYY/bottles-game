@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 16px 32px 0;
+    border: 1px solid red;
+}
+
+.backButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    margin: 0;
+}
+
+.backButtonIcon {
+    width: 40px;
+    margin-right: 12px;
+    transform: rotateZ(6deg);
+}
+
+.musicButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    margin: 0;
+    padding: 6px 12px;
+}
+
+.musicButtonIcon {
+    width: 40px;
+}
