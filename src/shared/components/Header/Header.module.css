@@ -21,16 +21,20 @@
     transform: rotateZ(6deg);
 }
 
-.musicButton {
+.smallButton {
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: fit-content;
-    margin: 0;
+    margin: 0 0 0 12px;
     padding: 6px 12px;
 }
 
-.musicButtonIcon {
+.rightIconGroup {
+    display: flex;
+}
+
+.smallButtonIcon {
     width: 40px;
 }

@@ -22,6 +22,10 @@ export const Header = () => {
     }
   };
 
+  const handleGithubClick = () => {
+    window.open('https://github.com/Mr-LYY/bottles-game', '_blank');
+  };
+
   return (
     <div className={styles.wrapper}>
       {!isGamePage && <div />}
@@ -32,9 +36,14 @@ export const Header = () => {
           </Button>
         </Link>
       )}
-      <Button onClick={handleMusicButtonClick} className={styles.musicButton}>
-        <img className={styles.musicButtonIcon} src={`./icons/Music${isMusicOn ? 'Off' : 'On'}.svg`} alt={''} />
-      </Button>
+      <div className={styles.rightIconGroup}>
+        <Button onClick={handleMusicButtonClick} className={styles.smallButton}>
+          <img className={styles.smallButtonIcon} src={`./icons/Music${isMusicOn ? 'Off' : 'On'}.svg`} alt={''} />
+        </Button>
+        <Button onClick={handleGithubClick} className={styles.smallButton}>
+          <img className={styles.smallButtonIcon} src={`./icons/GitHub.svg`} alt={''} />
+        </Button>
+      </div>
     </div>
   );
 };
